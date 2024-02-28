@@ -1,13 +1,13 @@
+import Button from "./eventos/Button"
 function Evento(){
     function meuEvento(e){
         e.preventDefault()
-        console.log("Fui ativado!")
+        console.log("Ativando primeiro evento")
     }
     return(
         <div>
             <p>Click para dispara um evento</p>
-            <button onClick={meuEvento}>Ativa!</button>
-
+            <Button event={meuEvento} text= "Primeiro evento"></Button>
         </div>
     )
 }
